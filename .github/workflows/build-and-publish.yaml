@@ -10,6 +10,9 @@ on:
 jobs:
   run:
     uses: ticketsbot-cloud/template/.github/workflows/template.yaml@main
+    permissions:
+      contents: read
+      packages: write
     with:
       package_name: autoclosedaemon
       sha: ${{ github.sha }}
